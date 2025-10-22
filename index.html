@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Rein - Cloud & Software Developer</title>
+    <!-- Import Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Import Lucide icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <style>
+        /* Set base font */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Add a subtle print-friendly style */
+        @media print {
+            body {
+                -webkit-print-color-adjust: exact;
+                color-adjust: exact;
+            }
+            .no-print {
+                display: none;
+            }
+            .print-shadow-none {
+                box-shadow: none;
+            }
+        }
+    </style>
+    <!-- Fallback for Inter font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100 p-4 sm:p-8">
+
+    <main class="max-w-4xl mx-auto bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 sm:p-10 print-shadow-none">
+        
+        <!-- Header Section -->
+        <header class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-8">
+            <div>
+                <img src="/Portfolio/Dan.jpeg" alt="Daniel Rein" class="w-24 h-24 rounded-full mb-4 sm:mb-0 sm:mr-6 border-4 border-blue-400">
+                <h1 class="text-4xl sm:text-5xl font-bold text-blue-600 dark:text-blue-400">Daniel Rein</h1>
+            </div>
+            <div class="mt-4 sm:mt-0 text-sm sm:text-right space-y-1">
+                <a href="mailto:daniellrein8@gmail.com" class="flex items-center text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400">
+                    <i data-lucide="mail" class="w-4 h-4 mr-2"></i>
+                    <span>daniellrein8@gmail.com</span>
+                </a>
+                <a href="https://github.com/DanielRein-1" target="_blank" rel="noopener noreferrer" class="flex items-center text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400">
+                    <i data-lucide="github" class="w-4 h-4 mr-2"></i>
+                    <span>github.com/DanielRein-1</span>
+                </a>
+            </div>
+        </header>
+
+        <!-- Professional Summary -->
+        <section class="mb-8">
+            <h2 class="text-2xl font-bold border-b-2 border-blue-500 pb-2 mb-4">Professional Journey</h2>
+            <p class="text-base leading-relaxed text-gray-700 dark:text-gray-300">
+                Cloud and Software Developer passionate about building scalable backend systems and deploying applications on the cloud. Specializes in AWS infrastructure, Python/Java development, and database design. Focused on leveraging DevOps tools like Docker and Git for automation and system optimization.
+            </p>
+        </section>
+
+        <!-- Technical Skills -->
+        <section class="mb-8">
+            <h2 class="text-2xl font-bold border-b-2 border-blue-500 pb-2 mb-4">Technical Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Cloud Computing -->
+                <div class="bg-gray-50 dark:bg-gray-700 p-4 rounded-lg">
+                    <h3 class="text-lg font-semibold mb-3 flex items-center"><i data-lucide="cloud" class="w-5 h-5 mr-2 text-blue-500"></i>Cloud Computing</h3>
+                    <ul class="space-y-2 text-sm text-gray-700 dark:text-gray-300">
+                        <li><strong>AWS:</strong> EC2, S3, Lambda, IAM, CloudWatch, VPC</li>
+                        <li><strong>Containerization:</strong> Docker, Docker Compose</li>
+                        <li><strong>Automation:</strong> AWS CLI, CloudFormation </li>
+                    </ul>
+                </div>
+                <!-- Programming -->
+                <div class="bg-gray-50 dark:bg-gray-700 p-4 rounded-lg">
+                    <h3 class="text-lg font-semibold mb-3 flex items-center"><i data-lucide="code" class="w-5 h-5 mr-2 text-blue-500"></i>Programming</h3>
+                    <ul class="space-y-2 text-sm text-gray-700 dark:text-gray-300">
+                        <li><strong>Python:</strong> API development, scripting, Flask, Pandas, NumPy</li>
+                        <li><strong>Java:</strong> Object-Oriented Design, Swing GUI, backend logic</li>
+                        <li><strong>Database:</strong> SQL </li>
+                    </ul>
+                </div>
+                <!-- Other Tools -->
+                <div class="bg-gray-50 dark:bg-gray-700 p-4 rounded-lg">
+                    <h3 class="text-lg font-semibold mb-3 flex items-center"><i data-lucide="terminal-square" class="w-5 h-5 mr-2 text-blue-500"></i>Other Tools</h3>
+                    <ul class="space-y-2 text-sm text-gray-700 dark:text-gray-300">
+                        <li><strong>OS & Version Control:</strong> Linux (Ubuntu), Shell Scripting, Git, GitHub</li>
+                        <li><strong>Editors:</strong> VSCode, Neovim</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section class="mb-8">
+            <h2 class="text-2xl font-bold border-b-2 border-blue-500 pb-2 mb-4">Projects</h2>
+            <div class="space-y-6">
+                <!-- Project 1 -->
+                <div class="border-l-4 border-gray-200 dark:border-gray-700 pl-4">
+                    <h3 class="text-xl font-semibold">Car Spare Parts Management System</h3>
+                    <div class="my-2">
+                        <span class="inline-block bg-gray-200 dark:bg-gray-600 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 dark:text-gray-200 mr-2 mb-2">Python</span>
+                        <span class="inline-block bg-gray-200 dark:bg-gray-600 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 dark:text-gray-200 mr-2 mb-2">Java</span>
+                        <span class="inline-block bg-gray-200 dark:bg-gray-600 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 dark:text-gray-200 mr-2 mb-2">MySQL</span>
+                        <span class="inline-block bg-gray-200 dark:bg-gray-600 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 dark:text-gray-200 mr-2 mb-2">HTML/CSS</span>
+                    </div>
+                    <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-1">
+                        <li>Designed and implemented a full-stack system for managing inventory, suppliers, and orders.</li>
+                        <li>Executed all database operations (CRUD) and ensured schema normalization.</li>
+                        <li>Integrated role-based access control (RBAC) for admin and staff users.</li>
+                    </ul>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="border-l-4 border-gray-200 dark:border-gray-700 pl-4">
+                    <h3 class="text-xl font-semibold">AWS Cloud Deployment Lab</h3>
+                    <div class="my-2">
+                        <span class="inline-block bg-gray-200 dark:bg-gray-600 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 dark:text-gray-200 mr-2 mb-2">AWS EC2</span>
+                        <span class="inline-block bg-gray-200 dark:bg-gray-600 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 dark:text-gray-200 mr-2 mb-2">S3</span>
+                        <span class="inline-block bg-gray-200 dark:bg-gray-600 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 dark:text-gray-200 mr-2 mb-2">Docker</span>
+                    </div>
+                    <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-1">
+                        <li>Deployed a containerized web application using a Docker image on an AWS EC2 instance.</li>
+                        <li>Configured security groups, IAM roles for secure access, and CloudWatch for monitoring.</li>
+                        <li>Automated application data backups to S3.</li>
+                    </ul>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="border-l-4 border-gray-200 dark:border-gray-700 pl-4">
+                    <h3 class="text-xl font-semibold">Data Analytics Toolkit</h3>
+                    <div class="my-2">
+                        <span class="inline-block bg-gray-200 dark:bg-gray-600 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 dark:text-gray-200 mr-2 mb-2">Python</span>
+                        <span class="inline-block bg-gray-200 dark:bg-gray-600 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 dark:text-gray-200 mr-2 mb-2">Pandas</span>
+                        <span class="inline-block bg-gray-200 dark:bg-gray-600 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 dark:text-gray-200 mr-2 mb-2">NumPy</span>
+                        <span class="inline-block bg-gray-200 dark:bg-gray-600 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 dark:text-gray-200 mr-2 mb-2">Seaborn</span>
+                    </div>
+                    <ul class_name="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-1">
+                        <li>Developed Python scripts to perform ETL (Extract, Transform, Load) operations on raw CSV data sets.</li>
+                        <li>Implemented data analysis and visualization functions to identify and display trends.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education & Certifications -->
+        <section>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Education -->
+                <div>
+                    <h2 class="text-2xl font-bold border-b-2 border-blue-500 pb-2 mb-4">Education</h2>
+                    <p class="text-gray-700 dark:text-gray-300">
+                        <strong>Bachelor's Information in Technology</strong> (2024--present)
+                    </p>
+                </div>
+                <!-- Certifications -->
+                <div>
+                    <h2 class="text-2xl font-bold border-b-2 border-blue-500 pb-2 mb-4">Certifications</h2>
+                    <p class="text-gray-700 dark:text-gray-300">
+                        <strong>AWS Certified Cloud Practitioner</strong>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    
+    <!-- Script to activate Lucide icons -->
+    <script>
+      lucide.createIcons();
+    </script>
+</body>
+</html>
